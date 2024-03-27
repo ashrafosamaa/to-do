@@ -1,0 +1,429 @@
+{
+	"info": {
+		"_postman_id": "4766c9cb-430e-4fd9-ad14-eed30defa17f",
+		"name": "to-do-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30814973",
+		"_collection_link": "https://planetary-sunset-510298.postman.co/workspace/Assignment-Route~e67ac1f9-9e31-46f0-8b8c-dcd959559faa/collection/30814973-4766c9cb-430e-4fd9-ad14-eed30defa17f?action=share&source=collection_link&creator=30814973"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"ki\",\r\n    \"email\": \"zakigmail.com\",\r\n    \"password\": \"123\",\r\n    \"age\": 25,\r\n    \"gender\": \"mae\",\r\n    \"phone\": \"015355117\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"zaki@gmail.com\",\r\n    \"password\": \"z@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change pass",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "accesstoken_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODg3NTQyZGIwODAxOTU3ZGJiN2U1YSIsInVzZXJOYW1lIjoiYWhtZWQiLCJlbWFpbCI6ImFobWVkQGdtYWlsLmNvbSIsImlhdCI6MTcwMzUwOTU2OCwiZXhwIjoxNzAzNTEzMTY4fQ.-cZS2uWu6DIQ-LAa5Lq0RVVGaTbvQ0Vs5KAJv6VfaAM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/changePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update acc",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "accesstoken_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODg3NTQyZGIwODAxOTU3ZGJiN2U1YSIsInVzZXJOYW1lIjoiYWhtZWQiLCJlbWFpbCI6ImFobWVkQGdtYWlsLmNvbSIsImlhdCI6MTcwMzUwOTYzMywiZXhwIjoxNzAzNTEzMjMzfQ.a3NvirN6QPD5aI6PY_eVqNTQhQlHfP5Llq6FH1zLWM0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"ahmed\",\r\n    \"age\": 25,\r\n    \"phone\": \"01111111111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete acc",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "accesstoken_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODg3NTQyZGIwODAxOTU3ZGJiN2U1YSIsInVzZXJOYW1lIjoiYWhtZWQiLCJlbWFpbCI6ImFobWVkQGdtYWlsLmNvbSIsImlhdCI6MTcwMzUwOTYzMywiZXhwIjoxNzAzNTEzMjMzfQ.a3NvirN6QPD5aI6PY_eVqNTQhQlHfP5Llq6FH1zLWM0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "accesstoken",
+									"value": "accesstoken_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODg1NDg0NjhiNTk0MTM0MTljNWFiYSIsInVzZXJOYW1lIjoiYXNocmFmIiwiZW1haWwiOiJhc2hyYWZAZ21haWwuY29tIiwiaWF0IjoxNzAzNDM2MTk5LCJleHAiOjE3MDM0Mzk3OTl9.-iYjxsiCdJiEbDJq3-CiaBCZytFTEUmDYR3sN-VU-Xo",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "soft delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "accesstoken_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk3ZTE5ZDc5NmViYTg1NDZiMzAwNCIsInVzZXJOYW1lIjoiYW1yIiwiZW1haWwiOiJhbXJAZ21haWwuY29tIiwiaWF0IjoxNzAzNTA5NzY3LCJleHAiOjE3MDM1MTMzNjd9.GkhBqJRW5Ksgru8_R5E02nO_z-IsXUfu4OYsQ1_zJnI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/user/softDelete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"softDelete"
+							],
+							"query": [
+								{
+									"key": "accesstoken",
+									"value": "accesstoken",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "soft delete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/sofAcc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"sofAcc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add file",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/ashra/OneDrive/Desktop/Picsart_23-02-02_23-35-34-405.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "add task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "accesstoken_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk3ZTE5ZDc5NmViYTg1NDZiMzAwNCIsInVzZXJOYW1lIjoiYW1yIiwiZW1haWwiOiJhbXJAZ21haWwuY29tIiwiaWF0IjoxNzAzNTA5ODIwLCJleHAiOjE3MDM1MTM0MjB9.JUwL9c6FtCGh2TSiTVfGH1OsiQrBThS7W6hBygkQcG4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"task-4\",\r\n    \"desc\": \"good\",\r\n    \"status\": \"toDo\",\r\n    \"assignTo\": \"658854bab8547bca1cf9dbb1\",\r\n    \"deadline\": \"2023-12-23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update task",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "accesstoken_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk3ZTE5ZDc5NmViYTg1NDZiMzAwNCIsInVzZXJOYW1lIjoiYW1yIiwiZW1haWwiOiJhbXJAZ21haWwuY29tIiwiaWF0IjoxNzAzNTA5ODIwLCJleHAiOjE3MDM1MTM0MjB9.JUwL9c6FtCGh2TSiTVfGH1OsiQrBThS7W6hBygkQcG4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"task-2\",\r\n    \"desc\": \"very good\",\r\n    \"status\": \"done\",\r\n    \"taskId\": \"65887b2596131cfe58704947\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete task",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "accesstoken_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk3ZTE5ZDc5NmViYTg1NDZiMzAwNCIsInVzZXJOYW1lIjoiYW1yIiwiZW1haWwiOiJhbXJAZ21haWwuY29tIiwiaWF0IjoxNzAzNTA5ODIwLCJleHAiOjE3MDM1MTM0MjB9.JUwL9c6FtCGh2TSiTVfGH1OsiQrBThS7W6hBygkQcG4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"taskId\": \"65897f4ed796eba8546b301c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list all tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "accesstoken_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODg1NGJhYjg1NDdiY2ExY2Y5ZGJiMSIsInVzZXJOYW1lIjoiemFraSIsImVtYWlsIjoiemFraUBnbWFpbC5jb20iLCJpYXQiOjE3MDM1MTA0MzgsImV4cCI6MTcwMzUxNDAzOH0.c3OKaEaFMYStQedsBkZGhswHzIZQfagTdWPnARlnbm8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/task/getTasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"getTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notFinished tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/task/notFinished",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"notFinished"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
